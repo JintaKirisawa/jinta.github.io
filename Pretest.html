@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretest for Forms and Tables</title>
+    <!-- <link rel="stylesheet" href="css/Pretest.css"> -->
+    <style>
+        table {
+            width: 50%;
+            table-layout: fixed;
+        }
+
+        .Item {
+            margin-bottom: 1em;
+        }
+
+        span {
+            color: red;
+        }
+
+        .email1 {
+            padding-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="form" method="get">
+        <!-- FULL NAME -->
+        <div class="Item">
+            <table>
+                <tr>
+                    <td>Full Name<span>*</span></td>
+                    <td>
+                        <label for="firstname">
+                            <input type="text" id="firstname" placeholder="First Name" required>
+                        </label>
+                        <label for="lastname">
+                            <input type="text" id="lastname" placeholder="Last Name" required>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- UNIVERSITY -->
+        <div class="Item">
+            <table>
+                <tr>
+                    <td>University<span>*</span></td>
+                    <td>
+                        <select name="university" id="university" required>
+                            <option value="nothing">Select University</option>
+                            <option value="oxford">University of Oxford</option>
+                            <option value="harvard">Harvard University</option>
+                            <option value="stanford">Stanford University</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- SPECIFY -->
+        <div class="Item">
+            <table>
+                <tr>
+                    <td>If other - Please Specify</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- FACULTY -->
+        <div class="Item">
+            <table>
+                <tr>
+                    <td>Faculty<span>*</span></td>
+                    <td>
+                        <select name="faculty" id="faculty" required>
+                            <option value="nothing">Select Faculty</option>
+                            <option value="oxford">Faculty of Arts</option>
+                            <option value="harvard">Faculty of Engineering</option>
+                            <option value="stanford">Faculty of Phillosophy</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- SPECIFY 2 -->
+        <div class="Item">
+            <table>
+                <tr>
+                    <td>If other - Please Specify</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- PhD -->
+        <div class="Item">
+            <table>
+                <tr>
+                    <td>Academic year of PhD<span>*</span></td>
+                    <td>
+                        <select name="PhD" id="PhD" required>
+                            <option value="nothing">2019</option>
+                            <option value="oxford">2020</option>
+                            <option value="harvard">2021</option>
+                            <option value="stanford">2022</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- WORK -->
+        <div class="Item">
+            <table>
+                <tr>
+                    <td>Where would you like to work?</td>
+                    <td>
+                        <div class="check-academia">
+                            <label for="academia">
+                                <input type="checkbox" name="work" id="academia" value="academia">Academia
+                            </label>
+                        </div>
+                        <div class="check-industry">
+                            <label for="industry">
+                                <input type="checkbox" name="work" id="industry" value="industry">Industry
+                            </label>
+                        </div>
+                        <div class="check-consultancy">
+                            <label for="consultancy">
+                                <input type="checkbox" name="work" id="consultancy" value="consultancy">Consultancy
+                            </label>
+                        </div>
+                        <div class="check-finance">
+                            <label for="finance">
+                                <input type="checkbox" name="work" id="finance" value="finance">Finance
+                            </label>
+                        </div>
+                        <div class="check-policy/government/ngo">
+                            <label for="policy/government/ngo">
+                                <input type="checkbox" name="policy/government/ngo" id="policy/government/ngo" value="policy/government/ngo">Policy / Government / NGO
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--  -->
+        <div class="Item">
+            <table>
+                <tr>
+                    <td>E-mail<span>*</span></td>
+                    <td>
+                        <div class="email1">
+                            <input type="email" placeholder="ex: myname@example.com" required>
+                        </div>
+                        <div class="email2">
+                            <input type="email" placeholder="Confirm Email" required>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="Item">
+            <table>
+                <tr>
+                    <td>Would you like to sign up to our newsletter?</td>
+                    <td>
+                        <div class="yes">
+                            <input type="radio" id="yes" value="yes" name="newsletter">
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div class="already">
+                            <input type="radio" id="already" value="already" name="newsletter">
+                            <label for="yes">No, I have already signed up</label>
+                        </div>
+                        <div class="no">
+                            <input type="radio" id="no" value="no" name="newsletter">
+                            <label for="yes">No</label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="Item">
+            <table>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+</body>
+</html>

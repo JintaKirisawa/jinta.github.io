@@ -1,0 +1,16 @@
+table {
+    width: 50%;
+    table-layout: fixed;
+}
+
+.Item {
+    margin-bottom: 1em;
+}
+
+span {
+    color: red;
+}
+
+.email1 {
+    padding-bottom:5px;
+}
